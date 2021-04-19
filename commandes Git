@@ -53,6 +53,8 @@ git log --author " le nom de l'author"     pour voir les commits d'une personne
 
 git log --after="2019-09-16"      filter les commits par date 
 
+git log <fichier>                 voir ce qui s'est passé sur le <fichier>
+
 git shortlog                      pour voir que les sujets des commits ainsi que l'auteur des commits
 
 
