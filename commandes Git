@@ -15,11 +15,10 @@ $git branch -m the_local_branch     on se positionne sur la branche renommer une
 
 #merge ---------------------------------------------------------------------------------------------
 
-       HEAD   l'endroit ou je me situe 
+HEAD   l'endroit ou je me situe 
 
-$git merge test       on se positionne sur la branche master et on fait le merge 
+$git merge test       on se positionne sur la branche master eet test c'est le nom de la branche qu'on souhaite fusionner
 
-    :x  lors de la modification 
 
 #commande -------------------------------------------------------------------------------------------
 
@@ -31,7 +30,7 @@ git add   <ficher>      repertoire de travail  ===>  l'index
 git commit -m "message"     l'index  ===>   depot git 
 
 
-git rm --cached  <ficher>        supprimer le add qu on a fait 
+git rm --cached  <ficher>                   supprimer le add qu on a fait 
 
 git ls-files --others --exclude-standard    pour voir les fichiers ajouter avec add 
 
