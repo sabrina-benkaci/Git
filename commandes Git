@@ -17,7 +17,7 @@ $git branch -m the_local_branch     on se positionne sur la branche renommer une
 
 HEAD   l'endroit ou je me situe 
 
-$git merge test       on se positionne sur la branche master eet test c'est le nom de la branche qu'on souhaite fusionner
+$git merge test       on se positionne sur la branche master et "test" c'est le nom de la branche qu'on souhaite fusionner
 
 
 #commande -------------------------------------------------------------------------------------------
