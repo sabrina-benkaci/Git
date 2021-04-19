@@ -23,9 +23,9 @@ $git merge test       on se positionne sur la branche master et "test" c'est le 
 #commande -------------------------------------------------------------------------------------------
 
 git init    
-git satus 
-
-git add   <ficher>      repertoire de travail  ===>  l'index 
+git satus              Affiche l'état de l'arborescence de travail
+git add                ajoute une modification du répertoire de travail à la zone de préparation
+git add  <ficher>      repertoire de travail  ===>  l'index 
 
 git commit -m "message"     l'index  ===>   depot git 
 
