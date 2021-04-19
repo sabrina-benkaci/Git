@@ -30,7 +30,7 @@ git add  <ficher>      repertoire de travail  ===>  l'index
 git commit -m "message"     l'index  ===>   depot git 
 
 
-git rm --cached  <ficher>                   supprimer le add qu on a fait 
+git rm --cached  <ficher>                   désindexer le <fichier>
 
 git ls-files --others --exclude-standard    pour voir les fichiers ajouter avec add 
 
