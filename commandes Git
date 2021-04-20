@@ -15,14 +15,14 @@ git branch -m the_local_branch                              on se positionne sur
 git log --graph --oneline                                   pour voir le graphe des branches 
 
 git merge  "nom de branche"                                 faut etre sur la branche ou on veut fusionner et on met le nom de la branche celle qu on veut fusion
-
-git rebase  nom de la branche                               faut etre sur la branche ou on veut fusionner 
+   
+git rebase  " branche "                                     integrer directement les modification de "branche" dans la branche principale "master" à condition de ne pas avoir fait encore de push
 
 #merge --------------------------------------------------------------------------------------------------------------
 
 HEAD                                                        l'endroit ou je me situe 
 
-$git merge test                                             on se positionne sur la branche master et "test" c'est le nom de la branche qu'on souhaite fusionner
+$git merge test                                             on se positionne sur la branche master et on la fusionne avec la branche "test"
 
 -
 #commande -----------------------------------------------------------------------------------------------------------
@@ -32,6 +32,7 @@ git satus                                                   Affiche l'état de l
 git add                                                     ajoute une modification du répertoire de travail à la zone de préparation
 git add  <ficher>                                           repertoire de travail  ===>  l'index 
 git clean -n                                                nettoyer le repertoire du travail (-n pour etre à blanc)
+git clone --bare localDepot/ remoteDepot                    créer une depot distant
    
 git clean -xf                                               supprimer les fichiers présents dans gitignore
 
@@ -70,7 +71,7 @@ git diff HEAD                                              comparer  le depot au
 
 git blame  nom du fichier                                  voir les personnes qui ont modifier le fichier
 
-git reset --hard                                           remettre le repertoire du travail exactement dna le meme etat que le depot git (rénitialiser tout)
+git reset --hard                                           remettre le repertoire du travail exactement dans le meme etat que le depot git (rénitialiser tout)
 
 git reset --hard  e35TF4                                   identifiant du commit      pour retourner au commit
 
@@ -89,9 +90,9 @@ git mv <fichier1> <fichier2>                                renommer fichier1 en
 
 
 git tag v1.0.0  e34a4e                                      pour taguer  un commit 
-
 git tag --list                                              pour voir la liste des tags 
-
+git show v1.0.0                                             voir les details du tag
+git tag -a v1.0.0 e34a4e -m"xxxx"                           ajouter une anotation au tag
 
 
 
@@ -99,7 +100,7 @@ git branch --all                                            pour voir les copies
 
 git fetch                                                   pour telecharger des copies local des  branches distantes 
 
-git merge FETCH_HEAD  
+git merge FETCH_HEAD                                        une trace de ce qui vient d'être récupéré du référentiel distant
 
 git pull origin master                                      pour la mise à jour 
 
@@ -120,7 +121,8 @@ git show 05b1233                                           renvoie directement l
  
  cloning :                                                crée une copie complète d’un dépôt sur votre ordinateur local.
  forking :                                                copie un projet github existant sur votre compte github.
-  
+ 
+ git remote                                               connexion au depor distant 
  git remote set-url origin new.git.url/here               changer l'url remote 
  
  git remote -v 
