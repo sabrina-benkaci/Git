@@ -1,139 +1,144 @@
-#branche -----------------------------------------------------------------------------------------
+#branche ------------------------------------------------------------------------------------------------------------
 
-git branch                                      pour la branche ou on se situe 
+git branch                                                  pour la branche ou on se situe 
 
-git branch test                                 creation  de la branche test 
+git branch test                                             creation  de la branche test 
 
-git checkout test                               se positionner sur  la branche test 
+git checkout test                                           se positionner sur  la branche test 
 
-git checkout -b test                            creation et positionnement sur la branche test 
+git checkout -b test                                        creation et positionnement sur la branche test 
 
-git branch -d the_local_branch                  supprimer une branche en locale
+git branch -d the_local_branch                              supprimer une branche en locale
 
-git branch -m the_local_branch                  on se positionne sur la branche renommer une branche en locale
+git branch -m the_local_branch                              on se positionne sur la branche renommer une branche en locale
 
-git log --graph --oneline                       pour voir le graphe des branches 
+git log --graph --oneline                                   pour voir le graphe des branches 
 
-git merge  "nom de branche"                     faut etre sur la branche ou on veut fusionner et on met le nom de la branche celle qu on veut fusion
+git merge  "nom de branche"                                 faut etre sur la branche ou on veut fusionner et on met le nom de la branche celle qu on veut fusion
 
-git rebase  nom de la branche                   faut etre sur la branche ou on veut fusionner 
+git rebase  nom de la branche                               faut etre sur la branche ou on veut fusionner 
 
-#merge ---------------------------------------------------------------------------------------------
+#merge --------------------------------------------------------------------------------------------------------------
 
-HEAD                                            l'endroit ou je me situe 
+HEAD                                                        l'endroit ou je me situe 
 
-$git merge test                                 on se positionne sur la branche master et "test" c'est le nom de la branche qu'on souhaite fusionner
+$git merge test                                             on se positionne sur la branche master et "test" c'est le nom de la branche qu'on souhaite fusionner
 
-
-#commande -------------------------------------------------------------------------------------------
+-
+#commande -----------------------------------------------------------------------------------------------------------
 
 git init    
-git satus                                        Affiche l'état de l'arborescence de travail
-git add                                          ajoute une modification du répertoire de travail à la zone de préparation
-git add  <ficher>                                repertoire de travail  ===>  l'index 
-git clean -n                                     nettoyer le repertoire du travail (-n pour etre à blanc)
+git satus                                                   Affiche l'état de l'arborescence de travail
+git add                                                     ajoute une modification du répertoire de travail à la zone de préparation
+git add  <ficher>                                           repertoire de travail  ===>  l'index 
+git clean -n                                                nettoyer le repertoire du travail (-n pour etre à blanc)
    
-git clean -xf                                    supprimer les fichiers présents dans gitignore
+git clean -xf                                               supprimer les fichiers présents dans gitignore
 
-git rm --cached  <ficher>                        désindexer le <fichier>
+git rm --cached  <ficher>                                   désindexer le <fichier>
 
-git ls-files --others --exclude-standard         pour voir les fichiers ajouter avec add 
+git ls-files --others --exclude-standard                    pour voir les fichiers ajouter avec add 
 
-git commit -m "message"      p                   our commiter
+git commit -m "message"      p                              our commiter
 
-git checkout e34fg (id du commit SHA)            pour aller vers le commit 
+git checkout e34fg (id du commit SHA)                       pour aller vers le commit 
 
-git log                                          pour voir les differents commits  
+git log                                                     pour voir les differents commits  
 
-git log -2                                       pour voir les deux dernier commits
+git log -2                                                  pour voir les deux dernier commits
 
-git log --oneline                                pour voir que les sujets des commits 
+git log --oneline                                           pour voir que les sujets des commits 
 
-git log --author " le nom de l'author"           pour voir les commits d'une personne 
+git log --author " le nom de l'author"                      pour voir les commits d'une personne 
+    
+git log --after="2019-09-16"                                filter les commits par date 
 
-git log --after="2019-09-16"                     filter les commits par date 
+git log -S "logo"                                           on cherche dans quels commit on a travailler sur "logo"
 
-git log -S "logo"                                on cherche dans quels commit on a travailler sur "logo"
+git log <fichier>                                           voir ce qui s'est passé sur le <fichier>
 
-git log <fichier>                                voir ce qui s'est passé sur le <fichier>
-
-git shortlog                                     pour voir que les sujets des commits ainsi que l'auteur des commits
-
-
-
-git diff                                        comparer les différences entre le répertoire du travail et l'indexe
-
-git diff --cached                               comparer l'index  au depot git 
-
-git diff HEAD                                   comparer  le depot au repertoire du travail
+git shortlog                                                pour voir que les sujets des commits ainsi que l'auteur des commits
 
 
-git blame  nom du fichier                       voir les personnes qui ont modifier le fichier
 
-git reset --hard                                remettre le repertoire du travail exactement dna le meme etat que le depot git (rénitialiser tout)
+git diff                                                   comparer les différences entre le répertoire du travail et l'indexe
 
-git reset --hard  e35TF4                        identifiant du commit      pour retourner au commit
+git diff --cached                                          comparer l'index  au depot git 
+
+git diff HEAD                                              comparer  le depot au repertoire du travail
+
+
+git blame  nom du fichier                                  voir les personnes qui ont modifier le fichier
+
+git reset --hard                                           remettre le repertoire du travail exactement dna le meme etat que le depot git (rénitialiser tout)
+
+git reset --hard  e35TF4                                   identifiant du commit      pour retourner au commit
 
 
 git reset --mixed
 
-git reset --soft                                 demande à Git de réinitialiser HEAD sur un autre commit
+git reset --soft                                            demande à Git de réinitialiser HEAD sur un autre commit
 
 
-git revert <commit>                              commande pour annuler un commit
+git revert <commit>                                         commande pour annuler un commit
 
-git reset <commit>                               commande pour annuler définitivement un commit
-
-
-git mv <fichier1> <fichier2>                      renommer fichier1 en fichier2
+git reset <commit>                                          commande pour annuler définitivement un commit
 
 
-git tag v1.0.0  e34a4e                            pour taguer  un commit 
-
-git tag --list                                    pour voir la liste des tags 
+git mv <fichier1> <fichier2>                                renommer fichier1 en fichier2
 
 
+git tag v1.0.0  e34a4e                                      pour taguer  un commit 
+
+git tag --list                                              pour voir la liste des tags 
 
 
-git branch --all                                  pour voir les copies local des  branches distantes 
 
-git fetch                                         pour telecharger des copies local des  branches distantes 
+
+git branch --all                                            pour voir les copies local des  branches distantes 
+
+git fetch                                                   pour telecharger des copies local des  branches distantes 
 
 git merge FETCH_HEAD  
 
-git pull origin master                            pour la mise à jour 
+git pull origin master                                      pour la mise à jour 
 
 
  
 
 
 
-git blame nomdufichier.extension                 renvoie le code source du fichier avec la particularité  d'indiquer l'auteur de chaque ligne
+git blame nomFichier.extension                             renvoie le code source du fichier avec la particularité  d'indiquer l'auteur de chaque ligne
 
-git show 05b1233                                 renvoie directement les détails du commit recherché 
+git show 05b1233                                           renvoie directement les détails du commit recherché 
 
 
-.gitignore                                       pour ignorer des fichier par exemple les fichier de config
+.gitignore                                                 pour ignorer des fichier par exemple les fichier de config
 
  
  git commit -m " modification du commit 4"  --amend       pour modifier le dernier commit
  
- cloning : crée une copie complète d’un dépôt sur votre ordinateur local.
- forking : copie un projet github existant sur votre compte github.
+ cloning :                                                crée une copie complète d’un dépôt sur votre ordinateur local.
+ forking :                                                copie un projet github existant sur votre compte github.
   
-  
- Git remote add » crée simplement une entrée dans votre configuration git qui spécifie le nom d’un URL. 
- Alors que « git clone » crée un nouveau référentiel git en copiant celui existant à l’URI.
- 
- 
- git remote set-url origin new.git.url/here      changer l'url remote 
+ git remote set-url origin new.git.url/here               changer l'url remote 
  
  git remote -v 
  
- #modification ---------------------------------------------------------------------------------------------
  
- $git stash                 mettre de côté vos modifications en cours
+ « git remote add » crée simplement une entrée dans votre configuration git qui spécifie le nom d’un URL. 
+  Alors que « git clone » crée un nouveau référentiel git en copiant celui existant à l’URI.
+ 
+ 
+ 
+ 
+ #modification -----------------------------------------------------------------------------------------------------------
+ 
+ $git stash                                               mettre de côté vos modifications en cours
    
- $git stash pop             récupérez les modifications que vous aviez mises de côté
+ $git stash pop                                           récupérez les modifications que vous aviez mises de côté
    
- fork                       faire une copie de repository  sur mon compte 
+ fork                                                     faire une copie de repository  sur mon compte 
+ 
+ 
+ 
