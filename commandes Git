@@ -60,20 +60,24 @@ git log <fichier>                                           voir ce qui s'est pa
 
 git shortlog                                                pour voir que les sujets des commits ainsi que l'auteur des commits
 
+git config --list                                           afficher tous vos paramètres
+
+git config --global user.name "sabrina benkaci"             changer votre nom d'utilisateur
+
+git config --global user.email sabrina@benkaci.com          changer votre email
+
+git diff                                                    comparer les différences entre le répertoire du travail et l'indexe
+
+git diff --cached                                           comparer l'index  au depot git 
+
+git diff HEAD                                               comparer  le depot au repertoire du travail
 
 
-git diff                                                   comparer les différences entre le répertoire du travail et l'indexe
+git blame  nom du fichier                                   voir les personnes qui ont modifier le fichier
 
-git diff --cached                                          comparer l'index  au depot git 
+git reset --hard                                            remettre le repertoire du travail exactement dans le meme etat que le depot git (rénitialiser tout)
 
-git diff HEAD                                              comparer  le depot au repertoire du travail
-
-
-git blame  nom du fichier                                  voir les personnes qui ont modifier le fichier
-
-git reset --hard                                           remettre le repertoire du travail exactement dans le meme etat que le depot git (rénitialiser tout)
-
-git reset --hard  e35TF4                                   identifiant du commit      pour retourner au commit
+git reset --hard  e35TF4                                    identifiant du commit      pour retourner au commit
 
 
 git reset --mixed
