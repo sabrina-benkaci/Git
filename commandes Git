@@ -33,7 +33,7 @@ git add                                                     ajoute une modificat
 git add  <ficher>                                           repertoire de travail  ===>  l'index 
 git clean -n                                                nettoyer le repertoire du travail (-n pour etre à blanc)
 git clone --bare localDepot/ remoteDepot                    créer une depot distant
-   
+git reset HEAD~                                              supprimer le dernier commit
 git clean -xf                                               supprimer les fichiers présents dans gitignore
 
 git rm --cached  <ficher>                                   désindexer le <fichier>
