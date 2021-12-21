@@ -145,6 +145,7 @@ git show 05b1233                                           renvoie directement l
  $git stash pop                                           récupérez les modifications que vous aviez mises de côté
    
  fork                                                     faire une copie de repository  sur mon compte 
- 
- 
+ __________________________________________________________________________________________
+ git reset --soft HEAD~1                                  Supprimez le dernier commit en conservant le travail que vous avez effectué
+ git reset --hard HEAD~1                                  Supprimez le dernier commit en détruisant le travail que vous avez effectué
  
