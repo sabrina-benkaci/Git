@@ -148,4 +148,4 @@ git show 05b1233                                           renvoie directement l
  __________________________________________________________________________________________
  git reset --soft HEAD~1                                  Supprimez le dernier commit en conservant le travail que vous avez effectué
  git reset --hard HEAD~1                                  Supprimez le dernier commit en détruisant le travail que vous avez effectué
- 
+ git push origin HEAD --force                             Si vous l'avez déjà poussé, vous devrez faire une force Push pour vous en débarrasser 
