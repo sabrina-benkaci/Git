@@ -135,8 +135,8 @@ git show 05b1233                                           renvoie directement l
  « git remote add » crée simplement une entrée dans votre configuration git qui spécifie le nom d’un URL. 
   Alors que « git clone » crée un nouveau référentiel git en copiant celui existant à l’URI.
  
- 
- 
+ ___________________________________________________________________________________________________________________________________________
+ git checkout --track origin/branchA     La branche 'branchA' est paramétrée pour suivre la branche distante 'branchA' depuis 'origin'.    
  
  #modification -----------------------------------------------------------------------------------------------------------
  
